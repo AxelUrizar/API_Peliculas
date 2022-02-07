@@ -5,7 +5,7 @@ const morgan = require('morgan')
 // var upgradeRouter = require('./routes/upgrade');
 // var deleteRouter = require('./routes/delete');
 const app = express();
-var PORT = 3000;
+const PORT = process.env.PORT || 3000; 
 
 app.use(express.json());
 
